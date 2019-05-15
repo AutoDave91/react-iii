@@ -3,17 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import List from './components/List'
 import Buttons from './components/Buttons'
+import Header from './components/Header'
 
 class App extends Component {
   render(){
     return (
       <main className="App">
-        <header className="App-header">
-          <h1>Home</h1>
-        </header>
+        <section className='App-header'>
+          <Header />
+        </section>
         <section className='List'>
-          <h4>List</h4>
-            <List />
+          <List />
         </section>
         <section className='Buttons'>
         <h4>Buttons</h4>

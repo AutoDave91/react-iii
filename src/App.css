@@ -18,12 +18,18 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: black;
+  margin-bottom: 10vh;
 }
 
 .List{
   background-color: white;
   color: black;
-  padding: auto;
+  margin: auto;
+  width: 75%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+
 }
 
 .Buttons{
