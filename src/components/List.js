@@ -1,6 +1,12 @@
 import React, {Component} from 'react'
 import data from './data'
-import { breakStatement } from '@babel/types';
+
+// Still need: function to control i in reference to the calls below.
+// Still need: styling to match image
+// Still need: attachment to onClicks
+
+
+
 
 class List extends Component{
     constructor(){

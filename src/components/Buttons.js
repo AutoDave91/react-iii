@@ -1,4 +1,4 @@
-//functions of Prev/next
+//Prev/next
 // edit/delete/new
 import React, {Component} from 'react'
 
