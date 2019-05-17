@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   background-color: black;
 }
 
@@ -25,6 +24,7 @@
   background-color: white;
   color: black;
   margin: auto;
+  padding-left: 7vw;
   width: 75%;
   height: 70vh;
   display: flex;

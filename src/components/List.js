@@ -9,37 +9,30 @@ import data from './data'
 
 
 class List extends Component{
-    constructor(){
-        super()
-        this.state ={
-            i: 0
-        }
-    }
-
     render(){
         let contact = data
         return(
             <main className='whiteBox'>
                 <section>
-                    {contact[this.state.i].id}/{contact.length}
+                    <h3>{contact[this.props.index].id}/{contact.length}</h3>
                 </section>
                 <section className='Name'>
-                    {contact[this.state.i].name.first} {contact[this.state.i].name.last}
+                    <h1>{contact[this.props.index].name.first} {contact[this.props.index].name.last}</h1>
                 </section>
                 <section className='From'>
-                    <strong>From:</strong> {contact[this.state.i].city}, {contact[this.state.i].country}
+                    <strong>From:</strong> {contact[this.props.index].city}, {contact[this.props.index].country}
                 </section>
                 <section className='Title'>
-                    <strong>Job Title:</strong> {contact[this.state.i].title}
+                    <strong>Job Title:</strong> {contact[this.props.index].title}
                 </section>
                 <section className='Employer'>
-                    <strong>Employer:</strong> {contact[this.state.i].employer}
+                    <strong>Employer:</strong> {contact[this.props.index].employer}
                 </section>
                 <section className='Movies'>
                 <strong>Favorite Movies:</strong> <ol>
-                    <li>{contact[this.state.i].favoriteMovies[0]}</li>
-                    <li>{contact[this.state.i].favoriteMovies[1]}</li>
-                    <li>{contact[this.state.i].favoriteMovies[2]}</li></ol>
+                    <li>{contact[this.props.index].favoriteMovies[0]}</li>
+                    <li>{contact[this.props.index].favoriteMovies[1]}</li>
+                    <li>{contact[this.props.index].favoriteMovies[2]}</li></ol>
                 </section>
             </main>
         )
@@ -47,3 +40,5 @@ class List extends Component{
 }
 
 export default List
+
+// imported 'Employee Card' to 'Container'
