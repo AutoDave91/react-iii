@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import data from './data'
+import './List_Style.css'
 
 // Still need: function to control i in reference to the calls below.
 // Still need: styling to match image
@@ -13,26 +14,28 @@ class List extends Component{
         let contact = data
         return(
             <main className='whiteBox'>
+                <section className='Counter'>
+                    <h3 className='counter'>{contact[this.props.index].id}/{contact.length}</h3>
+                </section>
                 <section>
-                    <h3>{contact[this.props.index].id}/{contact.length}</h3>
-                </section>
-                <section className='Name'>
-                    <h1>{contact[this.props.index].name.first} {contact[this.props.index].name.last}</h1>
-                </section>
-                <section className='From'>
-                    <strong>From:</strong> {contact[this.props.index].city}, {contact[this.props.index].country}
-                </section>
-                <section className='Title'>
-                    <strong>Job Title:</strong> {contact[this.props.index].title}
-                </section>
-                <section className='Employer'>
-                    <strong>Employer:</strong> {contact[this.props.index].employer}
-                </section>
-                <section className='Movies'>
-                <strong>Favorite Movies:</strong> <ol>
+                    <h1 className='Name'>{contact[this.props.index].name.first} {contact[this.props.index].name.last}</h1>
+                {/* </section> */}
+                {/* <section className='From'> */}
+                    <p><strong>From:</strong> {contact[this.props.index].city}, {contact[this.props.index].country}</p>
+                {/* </section> */}
+                {/* <section className='Title'> */}
+                    <p><strong>Job Title:</strong> {contact[this.props.index].title}</p>
+                {/* </section> */}
+                {/* <section className='Employer'> */}
+                    <p><strong>Employer:</strong> {contact[this.props.index].employer}</p>
+                {/* </section> */}
+                {/* <section className='Movies'> */}
+                <h4><strong>Favorite Movies:</strong></h4>
+                <ol>
                     <li>{contact[this.props.index].favoriteMovies[0]}</li>
                     <li>{contact[this.props.index].favoriteMovies[1]}</li>
-                    <li>{contact[this.props.index].favoriteMovies[2]}</li></ol>
+                    <li>{contact[this.props.index].favoriteMovies[2]}</li>
+                </ol>
                 </section>
             </main>
         )

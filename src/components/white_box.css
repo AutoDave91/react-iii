@@ -1,0 +1,42 @@
+.List{
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    padding-left: 7vw;
+    padding-right: 2vw;
+    width: 75%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.Buttons{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 4vh;
+}
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+.prev{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.next{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

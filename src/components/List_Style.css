@@ -1,0 +1,15 @@
+.whiteBox{
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+.Name{
+    font-size: 4vh;
+    border: solid #34a5da;
+    border-width: 0 0 2px 0;
+}
+.counter{
+    font-size: 4vh;
+}

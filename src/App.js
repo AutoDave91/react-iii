@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import White_box from './components/White_box'
-// import Buttons from './components/Buttons'
 import Header from './components/Header'
 
 class App extends Component {
@@ -12,13 +10,10 @@ class App extends Component {
         <section className='App-header'>
           <Header />
         </section>
-        <section className='List'>
+        <section className='White-box'>
           <White_box />
         </section>
-        {/* <section className='Buttons'>
-        <h4>Buttons</h4>
-          <Buttons />
-        </section> */}
+        <div></div>
       </main>
     );
   }
