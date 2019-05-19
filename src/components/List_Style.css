@@ -6,9 +6,14 @@
     justify-content: space-between;
 }
 .Name{
+    min-width: .5vw;
+}
+.name{
     font-size: 4vh;
     border: solid #34a5da;
     border-width: 0 0 2px 0;
+    margin-bottom: 1.5vh;
+    width: fit-content;
 }
 .counter{
     font-size: 4vh;

@@ -22,6 +22,11 @@ class White_box extends Component{
                     <button onClick={()=> {if(this.state.index >0){
                         this.setState({index: this.state.index -1})
                     }}}><strong><i className="prev"></i>Previous</strong></button>
+                    <div>
+                        <button className='BD' id='Edit'>Edit</button>
+                        <button className='BD' id='Delete'>Delete</button>
+                        <button className='BD'>New</button>
+                    </div>
                     <button onClick={()=> {if(this.state.index <data.length-1){
                         this.setState({index: this.state.index +1})}
                     }}><strong>Next<i className="next"></i></strong></button>
